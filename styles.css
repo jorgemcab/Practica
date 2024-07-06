@@ -38,6 +38,7 @@ body{
 .hero-form div input{
     margin: 0 30px 0 15px;
     border-radius: 5px;
+    color: #00001B;
 }
 .btn-acept{
     color: #00001B;
