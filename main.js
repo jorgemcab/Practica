@@ -1,33 +1,24 @@
 const listaDeNombres = document.querySelector(".names-list");
-const formHero = document.querySelector(".hero-form")
 
-
-const listaDeItems = [
+let listaDeItems = [
     {
-        Nombre : 'juan',
-        Apellido : 'perez',
-        Edad : 25
+        Nombre: "jorgita",
+        Apellido: "boludita",
+        Edad: 15,
+        id: "aca va aide Date.now()"
     }
-]
-
+];
 
 const render = () => {
     listaDeNombres.innerHTML = listaDeItems.map((indice) => {
-        return ` hola ${indice.Nombre}`
+        return `Hola ${indice.Nombre} que cara de ${indice.Apellido}`
     })
-    
+    // `Hola ${listaDeItems[0].Nombre} que cara de ${listaDeItems[0].Apellido}`
 }
-
-const agregarItem = (e) => {
-    e.preventDefault();
-
-}
-
 
 const init = () => {
     document.addEventListener("DOMContentLoaded", render);
-    formHero.addEventListener("submit", agregarItem)
 
 };
 
-init()
+init();
